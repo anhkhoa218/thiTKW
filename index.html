@@ -125,7 +125,9 @@
 </head>
 
 <body>
-	<audio src="./music.mp3" autoplay></audio>
+	<audio id="mp3" autoplay>
+	<source src="./music.mp3" type="audio/mpeg">
+	</audio>
 	<div class="header">
 		<h1>Hồ Lê Anh Khoa</h1>
 		<p>Danh sách phần mềm</p>
@@ -159,5 +161,15 @@
 	<div class="footer">
 		<b>Anh Khoa&copy2025</b>
 	</div>
+	<script>
+  		const audio = document.getElementById('mp3');
+
+  function playAudio() {
+    audio.play();
+    document.removeEventListener('click', playAudio);
+  }
+
+  document.addEventListener('click', playAudio);
+	</script>
 </body>
 </html>
