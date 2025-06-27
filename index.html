@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+	html {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+	body {
+		margin: 0
+	}
+	.header {
+		text-align: center;
+	}
+	h1 {
+		font-family: "Borel", cursive;
+	}
+	.nav {
+		display: flex;
+		background-color: #0B9F05;
+	}
+	.nav-link {
+		padding: 15px;
+	}
+	.nav-link:hover {
+		background-color: #5A5A5A;
+	}
+	.nav-link a {
+		text-decoration: none;
+		color: white;
+	}
+	.col:nth-child(2) {
+		animation-delay: 0.2s
+	}
+	.col:nth-child(3) {
+		animation-delay: 0.4s
+	}
+	.col {
+		width: calc(100%/3);
+		margin: 8px;
+		border: 2px solid #433F3F;
+		border-radius: 4px;
+		animation: truot 1s ease;
+		padding: 10px;
+		text-align: center;
+		will-change: transform;
+		animation-fill-mode: both;
+	}
+	.content {
+		display: flex;
+		margin: 20px;
+	}
+	.content-btn {
+		align-items: right;
+		background: #B53800;
+		border-radius: 40px;
+		text-align: center;
+		padding: 8px;
+		transition: all 1s ease;
+	}
+	.content-btn:hover {
+		color: white;
+		opacity: 0.5;
+		cursor: pointer;
+		transform: scaleY(1.2);
+	}
+	.content .col-title {
+		margin-bottom: 8px;
+		margin-right: 12px;
+		font-weight: bold;
+		font-family: "Noto Sans", sans-serif;
+	}
+	.col-content {
+		padding: 20px 0px;
+		font-family: "Kanit", sans-serif;
+	}
+	.footer {
+		background-color: black;
+		color: white;
+		text-align: center;
+		padding: 15px;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		left: 0
+	}
+	img {
+		background-size: cover;
+		background-repeat: no-repeat;
+		width: 200px;
+		height: 100px;
+		border-radius: 4px;
+		margin: 8px 0px;
+	}
+	@keyframes truot {
+		from {
+			transform: translateY(20px);
+			opacity: 0;
+		}
+		to {
+			transform: translateY(0);
+			opacity: 1;
+		}
+	}
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=home" />
+<link rel="stylesheet" href="./fontawesome-free-6.7.2-web/css/all.css">
+</head>
+
+<body>
+	<div class="header">
+		<h1>Hồ Lê Anh Khoa</h1>
+		<p></p>
+	</div>
+	<div class="nav">
+		<div class="nav-link"><a href="#"><i class="fa-solid fa-house"></i> Home</a></div>
+		<div class="nav-link"><a href="#"><i class="fa-solid fa-briefcase"></i> Projects</a></div>
+		<div class="nav-link"><a href="#"><i class="fa-solid fa-address-card"></i> Liên hệ</a></div>
+		<div class="nav-link"><a href="./layout1.html"><i class="fa-solid fa-address-card"></i> Layout 1</a></div>
+	</div>
+	<div class="content">
+		<div class="col">
+			<div class="col-title">Phần mềm quản lý học sinh</div>
+			<img src="./top-phan-mem-quan-ly-hoc-sinh.jpg" alt="">
+			<div class="col-content">Phần mềm quản lý bán hàng, hay còn gọi là phần mềm POS (Point of Sale), là một công cụ hỗ trợ đắc lực cho các doanh nghiệp trong việc quản lý quy trình bán hàng và giao dịch.</div>
+			<div class="content-btn"><i class="fa-solid fa-cart-plus"></i> Đặt mua</div>
+		</div>
+		<div class="col">
+			<div class="col-title">Website bán hàng</div>
+			<img src="./web-ban-hang-online-pho-bien-800x510.jpg" alt="">
+			<div class="col-content">Website bán hàng là một trang web cho phép các doanh nghiệp và cá nhân giới thiệu, trưng bày sản phẩm hoặc dịch vụ của mình, và khách hàng có thể tìm hiểu thông tin, đặt hàng và thanh toán trực tuyến.</div>
+			<div class="content-btn"><i class="fa-solid fa-cart-plus"></i> Đặt mua</div>
+		</div>
+		<div class="col">
+			<div class="col-title">Phần mềm tính tiền quán cafe</div>
+			<img src="./Source-code-phần-mềm-quản-lý-quán-cà-phê-c-mô-hình-3-lớp-có-báo-cáo.png" alt="">
+			<div class="col-content">Phần mềm tính tiền quán cafe là một ứng dụng công nghệ giúp quản lý và xử lý các giao dịch bán hàng tại quán cafe, trà sữa, hoặc các cửa hàng đồ uống tương tự. </div>
+			<div class="content-btn"><i class="fa-solid fa-cart-plus"></i> Đặt mua</div>
+		</div>
+	</div>
+	<div class="footer">
+		<b>Anh Khoa&copy2025</b>
+	</div>
+</body>
+</html>
